@@ -1,0 +1,78 @@
+input[type="button"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.component form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.page-title .base {
+  margin-bottom: 30px;
+  padding-bottom: 0;
+  line-height: 24px;
+}
+
+.page-wrapper > .breadcrumbs {
+  margin-bottom: 60px;
+}
+
+.breadcrumbs .items {
+  border-left: 5px solid #1f2610;
+  padding-left: 20px;
+  line-height: 1.4;
+}
+
+#maincontent.page-mains {
+  border-bottom: 4px solid #1f2610;
+  padding-bottom: 100px;
+}
+
+.page-title .base {
+  margin-bottom: 30px;
+  padding-bottom: 0;
+  line-height: 24px;
+}
+
+.page-title .base {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  color: #282828;
+  text-transform: capitalize;
+}
+
+form .row {
+  width: 100% !important;
+}
+
+.missing-form input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  height: auto !important;
+}
+
+#component {
+  border: 2px solid #d9d9d9;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 29rem;
+  height: 3rem;
+}

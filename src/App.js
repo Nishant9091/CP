@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import SideBar from "./Components/SideBar";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import SidebarToggle from "./Components/SidebarToggle";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home";
+import Main from './Components/Main'
+import Navbar from "./Components/SideBar";
+import AboutUs from "./Components/AboutUs";
+import Track from "./Components/Track";
+import Component from "./Components/Component";
+import Collaboration from "./Components/Collaboration";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+    <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="custom-pc" element={<Main/>}/>
+        <Route path="AboutUs" element={<AboutUs/>}/>
+        <Route path="Track" element={<Track/>}/>
+        <Route path="component" element={<Component/>}/>
+        <Route path="collaboration" element={<Collaboration/>}/>
+      </Routes>
+      <Footer/>
+    </Router>
+     
+    </>
   );
 }
 
